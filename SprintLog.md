@@ -1,6 +1,6 @@
-#### Friday 17th April
+### Friday 17th April
 
-####Sprint Backlog:
+#### print Backlog:
 * Review client documentation/specification
 * Set up Trello board
 * Set up Github repository
