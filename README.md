@@ -4,8 +4,8 @@ AutomationPractice.com.
 
 
 
-* Guide
-Required Software for project?
-How to install?
-How to use?
-How to view outcome of testing?
+Guide:
+* Required Software for project?
+* How to install?
+* How to use?
+* How to view outcome of testing?
