@@ -1,5 +1,7 @@
 # Final Project: Web Testing
 
+![Get it? WEB testing.](https://media.giphy.com/media/DKHjPO4kwpybm/giphy.gif)
+
 ## This project is a testing framework: the aim is finding the fastest route for a customer to make a purchase on AutomationPractice.com.
 
 ----
@@ -11,3 +13,5 @@
 ### How to use the project
 
 ### How to view the outcome of the project's tests
+
+![](https://media.giphy.com/media/10391PrBqx2LAc/giphy.gif)
