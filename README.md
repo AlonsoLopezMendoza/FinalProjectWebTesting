@@ -1,11 +1,13 @@
-# FinalProjectWebTesting
-This project is a testing framework which the aim was finding the fastest route to purchase for a customer on 
-AutomationPractice.com.
+# Final Project: Web Testing
 
+## This project is a testing framework: the aim is finding the fastest route for a customer to make a purchase on AutomationPractice.com.
 
+----
 
-Guide:
-* Required Software for project?
-* How to install?
-* How to use?
-* How to view outcome of testing?
+### Required software for the project
+
+### How to install the project
+
+### How to use the project
+
+### How to view the outcome of the project's tests
