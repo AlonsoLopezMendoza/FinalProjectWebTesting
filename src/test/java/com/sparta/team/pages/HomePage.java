@@ -33,10 +33,11 @@ public class HomePage {
 
     }
 
-    public void clickPopupCheckout(){
+    public CheckoutPage clickPopupCheckout(){
         WebDriverWait wait = new WebDriverWait(webDriver, 5);
         wait.until(ExpectedConditions.visibilityOf(webDriver.findElement(proceedToCheckoutButton)));
         webDriver.findElement(proceedToCheckoutButton).click();
+        return new CheckoutPage(webDriver);
     }
 
 
