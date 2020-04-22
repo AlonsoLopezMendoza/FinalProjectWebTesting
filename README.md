@@ -24,7 +24,11 @@
 1. IntelliJ will ask if you want to install the dependencies; say yes.
 
 ### How to use the project
+1. Complete the steps listed above.
+1. Run the TestRunner file.
 
 ### How to view the outcome of the project's tests
+1. Complete the steps listed in the above two sections.
+1. The test's results will appear at the bottom of IntelliJ.
 
 ![](https://media.giphy.com/media/10391PrBqx2LAc/giphy.gif)
