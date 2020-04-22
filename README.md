@@ -17,6 +17,11 @@
   * JUnit 4.12
 
 ### How to install the project
+1. Clone the project.
+1. Download the webdriver for Chrome.
+1. Put the webdriver (chromedriver.exe) in the project folder.
+1. Open the project in IntelliJ.
+1. IntelliJ will ask if you want to install the dependencies; say yes.
 
 ### How to use the project
 
