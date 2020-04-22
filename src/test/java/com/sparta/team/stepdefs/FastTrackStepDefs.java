@@ -119,4 +119,36 @@ public class FastTrackStepDefs {
     }
 
 
+    @Given("I am satisfied with what is in my cart")
+    public void iAmSatisfiedWithWhatIsInMyCart() {
+        //TODO
+    }
+
+    @When("I click pay by wire transfer")
+    public void iClickPayByWireTransfer() {
+        checkoutPage.clickPayByWireButton();
+    }
+
+    @And("I confirm my wire transfer payment option")
+    public void iConfirmMyWireTransferPaymentOption() {
+        Assertions.assertEquals("BANK-WIRE PAYMENT.", checkoutPage.getSubHeading());
+        checkoutPage.clickProceedToPaymentMethodConfirmation();
+    }
+
+
+    @When("I click pay by check")
+    public void iClickPayByCheck() {
+        checkoutPage.clickPayByCheckButton();
+    }
+
+    @And("I confirm my check payment option")
+    public void iConfirmMyCheckPaymentOption() {
+        Assertions.assertEquals("CHECK PAYMENT", checkoutPage.getSubHeading());
+        checkoutPage.clickProceedToPaymentMethodConfirmation();
+    }
+
+    @Then("I will see the order has been confirmed")
+    public void iWillSeeTheOrderHasBeenConfirmed() {
+        Assertions.assertEquals(true, checkoutPage.getOrderConfirmed());
+    }
 }
