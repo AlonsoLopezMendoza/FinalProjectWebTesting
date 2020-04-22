@@ -9,7 +9,7 @@
 ### Required software for the project:
 * IntelliJ
 * Maven
-* chromedriver.exe
+* [chromedriver.exe](https://chromedriver.chromium.org/downloads)
 * the following dependencies:
   * JUnit Jupiter 5.6.1
   * Selenium 3.141.59
@@ -17,8 +17,8 @@
   * JUnit 4.12
 
 ### How to install the project:
-1. Clone the project.
-1. Download the webdriver for Chrome.
+1. Clone the project: ```git clone https://github.com/AlonsoLopezMendoza/FinalProjectWebTesting.git```
+1. [Download the webdriver for Chrome.](https://chromedriver.chromium.org/downloads)
 1. Put the webdriver (chromedriver.exe) in the project folder.
 1. Open the project in IntelliJ.
 1. IntelliJ will ask if you want to install the dependencies; say yes.
