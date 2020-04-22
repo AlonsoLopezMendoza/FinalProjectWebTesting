@@ -2,7 +2,7 @@
 
 ![Get it? WEB testing.](https://media.giphy.com/media/DKHjPO4kwpybm/giphy.gif)
 
-## This project is a testing framework: the aim to find the fastest route for a customer to make a purchase on AutomationPractice.com.
+## This project is a testing framework: the aim is to find the fastest route for a customer to make a purchase on AutomationPractice.com.
 
 ----
 
