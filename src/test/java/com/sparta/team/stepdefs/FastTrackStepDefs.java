@@ -47,10 +47,12 @@ public class FastTrackStepDefs {
         Assertions.assertEquals("http://automationpractice.com/index.php?controller=order", webDriver.getCurrentUrl());
     }
 
-    @When("I click on the proceed to checkout button")
-    public void iClickOnTheProceedToCheckoutButton() {
-        checkoutPage.clickProceedToCheckoutButton();
+
+    @When("I click on the proceed to sign in button")
+    public void iClickOnTheProceedToSignInButton() {
+        checkoutPage.clickProceedToSignInButton();
     }
+
 
     @Then("I arrive at the sign in step")
     public void iArriveAtTheSignInStep() {
@@ -84,15 +86,26 @@ public class FastTrackStepDefs {
         Assertions.assertEquals("ADDRESSES", checkoutPage.getHeading());
     }
 
+    @When("I click on the proceed to shipping button")
+    public void iClickOnTheProceedToShippingButton() {
+        checkoutPage.clickProceedToShippingButton();
+    }
 
     @Then("I arrive at the shipping step")
     public void iArriveAtTheShippingStep() {
         Assertions.assertEquals("SHIPPING", checkoutPage.getHeading());
     }
 
+
+
     @Given("I am on the shipping step of the checkout page")
     public void iAmOnTheShippingStepOfTheCheckoutPage() {
         Assertions.assertEquals("SHIPPING", checkoutPage.getHeading());
+    }
+
+    @When("I click on the proceed to purchase button")
+    public void iClickOnTheProceedToPurchaseButton() {
+        checkoutPage.clickProceedToPurchaseButton();
     }
 
     @And("I click on the agree to terms of service checkbox")
@@ -104,4 +117,6 @@ public class FastTrackStepDefs {
     public void iArriveAtThePaymentStep() {
         Assertions.assertEquals("PLEASE CHOOSE YOUR PAYMENT METHOD", checkoutPage.getHeading());
     }
+
+
 }

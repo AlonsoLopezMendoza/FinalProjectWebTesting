@@ -2,7 +2,7 @@ Feature: As a user, I want to be able to checkout so that I can purchase my sele
 
   Scenario: User is in the summary step and wants to proceed with their purchase
     Given I am on the summary step of the checkout page
-    When I click on the proceed to checkout button
+    When I click on the proceed to sign in button
     Then I arrive at the sign in step
 
 
@@ -14,12 +14,12 @@ Feature: As a user, I want to be able to checkout so that I can purchase my sele
 
   Scenario: User is the address step and wants to proceed with their purchase
     Given I am on the address step of the checkout page
-    When I click on the proceed to checkout button
+    When I click on the proceed to shipping button
     Then I arrive at the shipping step
 
 
   Scenario: User is on the shipping step and wants to proceed with their purchase
     Given I am on the shipping step of the checkout page
-    When I click on the proceed to checkout button
-    And I click on the agree to terms of service checkbox
+    When I click on the agree to terms of service checkbox
+    And I click on the proceed to purchase button
     Then I arrive at the payment step
