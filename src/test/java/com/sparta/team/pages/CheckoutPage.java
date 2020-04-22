@@ -27,74 +27,71 @@ public class CheckoutPage {
     private String orderConfirmedText = "Your order on My Store is complete.";
 
 
-    public CheckoutPage(WebDriver webDriver){
+    public CheckoutPage(WebDriver webDriver) {
         this.webDriver = webDriver;
     }
 
-    public void clickProceedToSignInButton(){
+    public void clickProceedToSignInButton() {
         webDriver.findElement(proceedToSignIn).click();
     }
 
-    public void clickProceedToShippingButton(){
+    public void clickProceedToShippingButton() {
         webDriver.findElement(proceedToShipping).click();
     }
 
-    public void clickProceedToPurchaseButton(){
+    public void clickProceedToPurchaseButton() {
         webDriver.findElement(proceedToPayment).click();
     }
 
 
-
-    public void clickSignInButton(){
+    public void clickSignInButton() {
         webDriver.findElement(signInButton).click();
     }
 
-    public void clickTermsOfServiceCheckBox(){
+    public void clickTermsOfServiceCheckBox() {
         webDriver.findElement(termsOfServiceCheckBox).click();
     }
 
-    public void clickPayByWireButton(){
+    public void clickPayByWireButton() {
         webDriver.findElement(payByBankWireButton).click();
     }
 
-    public void clickPayByCheckButton(){
+    public void clickPayByCheckButton() {
         webDriver.findElement(payByCheckButton).click();
     }
 
-    public String getHeading(){
+    public String getHeading() {
         return webDriver.findElement(heading).getText();
     }
 
-    public String getSubHeading(){
+    public String getSubHeading() {
         return webDriver.findElement(subheading).getText();
     }
 
 
-    public boolean getOrderConfirmed(){
+    public boolean getOrderConfirmed() {
         boolean answer;
 
-        try{
+        try {
             answer = webDriver.findElement(darkText).getText().equals(orderConfirmedText);
-        }
-        catch(NoSuchElementException e){
+        } catch (NoSuchElementException e) {
             answer = webDriver.findElement(greenConfirmationText).getText().equals(orderConfirmedText);
 
         }
         return answer;
     }
 
-    public void enterIntoEmailAddressTextBox(String s){
+    public void enterIntoEmailAddressTextBox(String s) {
         webDriver.findElement(emailAddressTextBox).sendKeys(s);
     }
 
-    public void enterIntoPasswordTextBox(String s){
+    public void enterIntoPasswordTextBox(String s) {
         webDriver.findElement(passwordTextBox).sendKeys(s);
     }
 
-    public void clickProceedToPaymentMethodConfirmation(){
-            webDriver.findElement(proceedToPaymentMethodConfirmation).click();
+    public void clickProceedToPaymentMethodConfirmation() {
+        webDriver.findElement(proceedToPaymentMethodConfirmation).click();
     }
-
 
 
 }

@@ -63,6 +63,7 @@ public class FastTrackStepDefs {
     @Given("I am on the sign in step of the checkout page")
     public void iAmOnTheSignInStepOfTheCheckoutPage() {
         Assertions.assertEquals("AUTHENTICATION", checkoutPage.getHeading());
+
     }
 
     @When("I enter my account details")
@@ -118,11 +119,6 @@ public class FastTrackStepDefs {
     }
 
 
-    @Given("I am satisfied with what is in my cart")
-    public void iAmSatisfiedWithWhatIsInMyCart() {
-        //TODO
-    }
-
     @When("I click pay by wire transfer")
     public void iClickPayByWireTransfer() {
         checkoutPage.clickPayByWireButton();
@@ -150,4 +146,45 @@ public class FastTrackStepDefs {
     public void iWillSeeTheOrderHasBeenConfirmed() {
         Assertions.assertEquals(true, checkoutPage.getOrderConfirmed());
     }
+
+
+    @Given("I have added an item to my basket and proceeded to checkout")
+    public void iHaveAddedAnItemToMyBasketAndProceededToCheckout() {
+        iAmOnOnTheHomepage();
+        iClickTheFirstItemsAddToCart();
+        iClickGoToCheckoutOnThePopup();
+    }
+
+
+    @And("I have gone through the summary page")
+    public void iHaveGoneThroughTheSummaryPage() {
+        iHaveAddedAnItemToMyBasketAndProceededToCheckout();
+        iClickOnTheProceedToSignInButton();
+    }
+
+    @And("I have signed in during checkout")
+    public void iHaveSignedInDuringCheckout() {
+        iHaveGoneThroughTheSummaryPage();
+        iEnterMyAccountDetails();
+    }
+
+    @And("I have confirmed my address")
+    public void iHaveConfirmedMyAddress() {
+        iHaveSignedInDuringCheckout();
+        iClickOnTheProceedToShippingButton();
+    }
+
+    @Given("I have gone through the shipping page")
+    public void iHaveGoneThroughTheShippingPage() {
+        iHaveConfirmedMyAddress();
+        iClickOnTheAgreeToTermsOfServiceCheckbox();
+        iClickOnTheProceedToPurchaseButton();
+    }
+
+    @Given("I am on the payment step of the checkout page")
+    public void iAmOnThePaymentStepOfTheCheckoutPage() {
+        Assertions.assertEquals("PLEASE CHOOSE YOUR PAYMENT METHOD", checkoutPage.getHeading());
+    }
+
+
 }
