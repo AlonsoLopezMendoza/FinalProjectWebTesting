@@ -27,7 +27,7 @@
 
 ### How to use the project:
 1. Complete the steps listed above.
-1. Run the TestRunner file.
+1. Run TestRunner.java.
 
 ### How to view the outcome of the project's tests:
 1. Complete the steps listed in the above two sections.
