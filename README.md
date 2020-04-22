@@ -7,6 +7,14 @@
 ----
 
 ### Required software for the project
+* IntelliJ
+* Maven
+* chromedriver.exe
+* the following dependencies:
+  * JUnit Jupiter 5.6.1
+  * Selenium 3.141.59
+  * Cucumber 5.6.0
+  * JUnit 4.12
 
 ### How to install the project
 
