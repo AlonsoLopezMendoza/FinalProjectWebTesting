@@ -31,7 +31,6 @@ public class FastTrackStepDefs {
     @And("I click go to checkout on the popup")
     public void iClickGoToCheckoutOnThePopup() {
         checkoutPage = homePage.clickPopupCheckout();
-        System.out.println(checkoutPage);
     }
 
     @Then("I am on the checkout page")

@@ -15,6 +15,8 @@ public class HomePage {
 
     By proceedToCheckoutButton = new By.ByCssSelector("#layer_cart > div.clearfix > div.layer_cart_cart.col-xs-12.col-md-6 > div.button-container > a > span");
 
+    private final int TIMEOUTTIME = 5;
+
     public HomePage(WebDriver webDriver){
         this.webDriver = webDriver;
         webDriver.manage().window().maximize();
@@ -34,7 +36,7 @@ public class HomePage {
     }
 
     public CheckoutPage clickPopupCheckout(){
-        WebDriverWait wait = new WebDriverWait(webDriver, 5);
+        WebDriverWait wait = new WebDriverWait(webDriver, TIMEOUTTIME);
         wait.until(ExpectedConditions.visibilityOf(webDriver.findElement(proceedToCheckoutButton)));
         webDriver.findElement(proceedToCheckoutButton).click();
         return new CheckoutPage(webDriver);
