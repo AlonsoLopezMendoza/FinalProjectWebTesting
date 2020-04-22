@@ -9,7 +9,8 @@
 ### Required software for the project:
 * IntelliJ
 * Maven
-* [chromedriver.exe](https://chromedriver.chromium.org/downloads)
+* [webdriver for Chrome](https://chromedriver.chromium.org/downloads)
+* [webdriver for Firefox](https://github.com/mozilla/geckodriver)
 * the following dependencies:
   * JUnit Jupiter 5.6.1
   * Selenium 3.141.59
@@ -19,7 +20,8 @@
 ### How to install the project:
 1. Clone the project: ```git clone https://github.com/AlonsoLopezMendoza/FinalProjectWebTesting.git```
 1. [Download the webdriver for Chrome.](https://chromedriver.chromium.org/downloads)
-1. Put the webdriver (chromedriver.exe) in the project folder.
+1. [Download the webdriver for Firefox.](https://github.com/mozilla/geckodriver)
+1. Put the webdrivers (chromedriver.exe and geckodriver.exe) in the project folder.
 1. Open the project in IntelliJ.
 1. IntelliJ will ask if you want to install the dependencies; say yes.
 
