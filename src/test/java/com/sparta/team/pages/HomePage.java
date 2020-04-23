@@ -1,9 +1,11 @@
 package com.sparta.team.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -27,12 +29,14 @@ public class HomePage {
     private Actions hoverFirstItem() {
         Actions actions = new Actions(webDriver);
         WebElement menu = webDriver.findElement(firstItemBox);
+        ((JavascriptExecutor) webDriver).executeScript("arguments[0].scrollIntoView(true);", menu);
         actions.moveToElement(menu);
         return actions;
     }
 
     public void addFirstItemToCart() {
         Actions actions = hoverFirstItem();
+
         WebElement subMenu = webDriver.findElement(firstItemAddToCartButton);
         actions.moveToElement(subMenu);
         actions.click().build().perform();
