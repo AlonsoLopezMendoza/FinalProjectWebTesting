@@ -158,35 +158,86 @@ public class FastTrackStepDefs {
 
     @Given("I have added an item to my basket and proceeded to checkout")
     public void iHaveAddedAnItemToMyBasketAndProceededToCheckout() {
-        iAmOnOnTheHomepage();
-        iClickTheFirstItemsAddToCart();
-        iClickGoToCheckoutOnThePopup();
+        importProperties();
+        webDriver = DriverFactory.getWebDriver(browserType);
+        homePage = new HomePage(webDriver);
+
+        homePage.addFirstItemToCart();
+
+        checkoutPage = homePage.clickPopupCheckout();
     }
 
 
     @And("I have gone through the summary page")
     public void iHaveGoneThroughTheSummaryPage() {
-        iHaveAddedAnItemToMyBasketAndProceededToCheckout();
-        iClickOnTheProceedToSignInButton();
+        importProperties();
+        webDriver = DriverFactory.getWebDriver(browserType);
+        homePage = new HomePage(webDriver);
+
+        homePage.addFirstItemToCart();
+
+        checkoutPage = homePage.clickPopupCheckout();
+
+        checkoutPage.clickProceedToSignInButton();
     }
 
     @And("I have signed in during checkout")
     public void iHaveSignedInDuringCheckout() {
-        iHaveGoneThroughTheSummaryPage();
-        iEnterMyAccountDetails();
+        importProperties();
+        webDriver = DriverFactory.getWebDriver(browserType);
+        homePage = new HomePage(webDriver);
+
+        homePage.addFirstItemToCart();
+
+        checkoutPage = homePage.clickPopupCheckout();
+
+        checkoutPage.clickProceedToSignInButton();
+
+        checkoutPage.enterIntoEmailAddressTextBox("PNoble@SpartaGlobal.com");
+        checkoutPage.enterIntoPasswordTextBox("FinalProject");
+        checkoutPage.clickSignInButton();
     }
 
     @And("I have confirmed my address")
     public void iHaveConfirmedMyAddress() {
-        iHaveSignedInDuringCheckout();
-        iClickOnTheProceedToShippingButton();
+        importProperties();
+        webDriver = DriverFactory.getWebDriver(browserType);
+        homePage = new HomePage(webDriver);
+
+        homePage.addFirstItemToCart();
+
+        checkoutPage = homePage.clickPopupCheckout();
+
+        checkoutPage.clickProceedToSignInButton();
+
+        checkoutPage.enterIntoEmailAddressTextBox("PNoble@SpartaGlobal.com");
+        checkoutPage.enterIntoPasswordTextBox("FinalProject");
+        checkoutPage.clickSignInButton();
+
+        checkoutPage.clickProceedToShippingButton();
     }
 
     @Given("I have gone through the shipping page")
     public void iHaveGoneThroughTheShippingPage() {
-        iHaveConfirmedMyAddress();
-        iClickOnTheAgreeToTermsOfServiceCheckbox();
-        iClickOnTheProceedToPurchaseButton();
+        importProperties();
+        webDriver = DriverFactory.getWebDriver(browserType);
+        homePage = new HomePage(webDriver);
+
+        homePage.addFirstItemToCart();
+
+        checkoutPage = homePage.clickPopupCheckout();
+
+        checkoutPage.clickProceedToSignInButton();
+
+        checkoutPage.enterIntoEmailAddressTextBox("PNoble@SpartaGlobal.com");
+        checkoutPage.enterIntoPasswordTextBox("FinalProject");
+        checkoutPage.clickSignInButton();
+
+        checkoutPage.clickProceedToShippingButton();
+
+        checkoutPage.clickTermsOfServiceCheckBox();
+        
+        checkoutPage.clickProceedToPurchaseButton();
     }
 
     @Given("I am on the payment step of the checkout page")
