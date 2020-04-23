@@ -1,5 +1,9 @@
 ## Sprint Log
 
+![](https://media.giphy.com/media/U4RX7LYnOywv1us4VP/giphy.gif)
+
+----
+
 ### Friday 17th April
 
 #### Sprint Backlog:
