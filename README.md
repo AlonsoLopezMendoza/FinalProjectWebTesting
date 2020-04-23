@@ -28,7 +28,7 @@
 
 
 ### How to use the project:
-1. Complete the steps listed above.
+1. Complete installation steps 1 to 6.
 1. To select which browser to use, type in the name in the "resources/browser.properties", for example "browser = firefox"
 1. Run TestRunner.java.
 
