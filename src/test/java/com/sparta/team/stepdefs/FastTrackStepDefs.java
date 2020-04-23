@@ -25,7 +25,7 @@ public class FastTrackStepDefs {
 
     @When("I click the first item's add to cart")
     public void iClickTheFirstItemsAddToCart() {
-        homePage.hoverFirstItemAndClickAddToCart();
+        homePage.addFirstItemToCart();
     }
 
     @And("I click go to checkout on the popup")
