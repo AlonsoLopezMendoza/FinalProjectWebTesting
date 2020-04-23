@@ -26,18 +26,20 @@ public class HomePage {
         webDriver.get("http://automationpractice.com/index.php");
     }
 
-    public void hoverFirstItemAndClickAddToCart(){
-
+    private Actions hoverFirstItem() {
         Actions actions = new Actions(webDriver);
         WebElement menu = webDriver.findElement(firstItemBox);
         ((JavascriptExecutor) webDriver).executeScript("arguments[0].scrollIntoView(true);", menu);
         actions.moveToElement(menu);
+        return actions;
+    }
 
+    public void addFirstItemToCart() {
+        Actions actions = hoverFirstItem();
 
         WebElement subMenu = webDriver.findElement(firstItemAddToCartButton);
         actions.moveToElement(subMenu);
         actions.click().build().perform();
-
     }
 
     public CheckoutPage clickPopupCheckout(){
@@ -46,8 +48,4 @@ public class HomePage {
         webDriver.findElement(proceedToCheckoutButton).click();
         return new CheckoutPage(webDriver);
     }
-
-
-
-
 }
