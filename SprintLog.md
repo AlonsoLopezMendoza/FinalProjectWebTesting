@@ -32,7 +32,7 @@
 
 ----
 
-### Friday 20th April
+### Monday 20th April
 
 #### Sprint Backlog:
 * Add Gherkin to all user stories.
