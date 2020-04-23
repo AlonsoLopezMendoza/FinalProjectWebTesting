@@ -1,15 +1,10 @@
-package com.sparta.team.driverManager;
+package com.sparta.team.driverfactory;
 
-import com.sparta.team.driver.ChromeDriverManager;
-import com.sparta.team.driver.FirefoxDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
-
-    public DriverFactory() {
-    }
 
     public static WebDriver getWebDriver(String driverType){
         WebDriver newWebDriver;
@@ -25,8 +20,6 @@ public class DriverFactory {
                 newWebDriver = new ChromeDriver();
                 break;
         }
-
-
         return newWebDriver;
     }
 }

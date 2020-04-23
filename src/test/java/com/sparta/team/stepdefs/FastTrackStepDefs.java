@@ -1,8 +1,6 @@
 package com.sparta.team.stepdefs;
 
-import com.sparta.team.driverManager.DriverFactory;
-import com.sparta.team.driverManager.DriverManagerFactory;
-import com.sparta.team.driverManager.DriverType;
+import com.sparta.team.driverfactory.DriverFactory;
 import com.sparta.team.pages.CheckoutPage;
 import com.sparta.team.pages.HomePage;
 import io.cucumber.java.en.And;
@@ -11,7 +9,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -24,9 +21,7 @@ public class FastTrackStepDefs {
     private String browserType = "";
 
     public void importProperties() {
-
         Properties properties = new Properties();
-
         try {
             properties.load(new FileReader("src/test/resources/browserType.properties"));
             browserType = properties.getProperty("browser").toUpperCase();
