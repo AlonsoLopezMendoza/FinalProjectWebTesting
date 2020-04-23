@@ -15,6 +15,7 @@ public class HomePage {
 
     By proceedToCheckoutButton = new By.ByCssSelector("#layer_cart > div.clearfix > div.layer_cart_cart.col-xs-12.col-md-6 > div.button-container > a > span");
 
+
     private final int TIMEOUTTIME = 5;
 
     public HomePage(WebDriver webDriver){
@@ -41,6 +42,7 @@ public class HomePage {
         webDriver.findElement(proceedToCheckoutButton).click();
         return new CheckoutPage(webDriver);
     }
+
 
 
 
