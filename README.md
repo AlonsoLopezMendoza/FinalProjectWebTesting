@@ -7,7 +7,7 @@
 ----
 
 ### Required software for the project:
-* IntelliJ 2019.3.3 or above
+* IntelliJ 2019.3.3
 * Java 13
 * Maven 3 
 * [webdriver for Chrome](https://chromedriver.chromium.org/downloads) (Must be same version as installed browser)
