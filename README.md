@@ -4,6 +4,8 @@
 
 ## This project is a testing framework: the aim is to find the fastest route for a customer to make a purchase on AutomationPractice.com.
 
+[I'm an inline-style link](https://www.google.com)
+
 ----
 
 ### Required software for the project:
