@@ -77,7 +77,7 @@ public class HomePage {
     }
 
     public String getFirstItemPrice() {
-        return (webDriver.findElement(firstItemBox).findElement(firstItemPrice).getText();
+        return webDriver.findElement(firstItemBox).findElement(firstItemPrice).getText();
     }
 
     public String getPopUpItemImage() {
