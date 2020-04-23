@@ -1,5 +1,6 @@
 package com.sparta.team.stepdefs;
 
+import com.sparta.team.driverfactory.DriverFactory;
 import com.sparta.team.pages.CheckoutPage;
 import com.sparta.team.pages.HomePage;
 import io.cucumber.java.en.And;
@@ -8,18 +9,31 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
 
 public class FastTrackStepDefs {
     private static WebDriver webDriver;
     private static HomePage homePage;
     private static CheckoutPage checkoutPage;
+    private String browserType = "";
 
-
+    public void importProperties() {
+        Properties properties = new Properties();
+        try {
+            properties.load(new FileReader("src/test/resources/browserType.properties"));
+            browserType = properties.getProperty("browser").toUpperCase();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     @Given("I am on on the homepage")
     public void iAmOnOnTheHomepage() {
-        webDriver = new ChromeDriver();
+        importProperties();
+        webDriver = DriverFactory.getWebDriver(browserType);
         homePage = new HomePage(webDriver);
     }
 
@@ -39,8 +53,6 @@ public class FastTrackStepDefs {
     }
 
 
-
-
     @Given("I am on the summary step of the checkout page")
     public void iAmOnTheSummaryStepOfTheCheckoutPage() {
         Assertions.assertEquals("http://automationpractice.com/index.php?controller=order", webDriver.getCurrentUrl());
@@ -57,7 +69,6 @@ public class FastTrackStepDefs {
     public void iArriveAtTheSignInStep() {
         Assertions.assertEquals("AUTHENTICATION", checkoutPage.getHeading());
     }
-
 
 
     @Given("I am on the sign in step of the checkout page")
@@ -79,8 +90,6 @@ public class FastTrackStepDefs {
     }
 
 
-
-
     @Given("I am on the address step of the checkout page")
     public void iAmOnTheAddressStepOfTheCheckoutPage() {
         Assertions.assertEquals("ADDRESSES", checkoutPage.getHeading());
@@ -95,7 +104,6 @@ public class FastTrackStepDefs {
     public void iArriveAtTheShippingStep() {
         Assertions.assertEquals("SHIPPING", checkoutPage.getHeading());
     }
-
 
 
     @Given("I am on the shipping step of the checkout page")
