@@ -24,12 +24,11 @@
 1. Clone the project: ```git clone https://github.com/AlonsoLopezMendoza/FinalProjectWebTesting.git```
 1. Open the project in IntelliJ.
 1. IntelliJ will ask if you want to install the dependencies; say yes.
-1. Put the webdrivers (chromedriver.exe and geckodriver.exe) in the project folder (same place in hierarchy as the pom.xml file)
-
+1. Put the webdrivers (chromedriver.exe and geckodriver.exe) in the project folder (the same place in the hierarchy as the pom.xml file).
 
 ### How to use the project:
 1. Complete installation steps 1 to 6.
-1. To select which browser to use, type in the name in the "resources/browser.properties", for example "browser=firefox"
+1. To select which browser to use, type in the name in the "resources/browser.properties", for example "browser=firefox".
 1. Run TestRunner.java.
 
 ### How to view the outcome of the project's tests:
@@ -37,9 +36,9 @@
 1. The test's results will appear at the bottom of IntelliJ.
 
 ### Other useful links:
+* To find and check for compatible browsers for Selenium and where to get drivers for the browser:
+[Selenium tools, drivers and browsers](https://www.selenium.dev/downloads/)
 
-To find and check for compatible browser for Selenium and where to get driver for the browser.  
-[Selenium tools, drivers and browsers] (https://www.selenium.dev/downloads/)
-
+----
 
 ![](https://media.giphy.com/media/10391PrBqx2LAc/giphy.gif)
