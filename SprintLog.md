@@ -55,50 +55,32 @@
 
 ### Tuesday 21th April
 
-#### Sprint Backlog:
-* 
 
-#### Sprint Review:
-* 
-
-#### Sprint Retrospective:
-* 
 
 ----
 
 ### Wednesday 22nd April
 
-#### Sprint Backlog:
-* 
 
-#### Sprint Review:
-* 
-
-#### Sprint Retrospective:
-* 
 
 ----
 
 ### Thursday 23rd April
 
-#### Sprint Backlog:
-* 
 
-#### Sprint Review:
-* 
-
-#### Sprint Retrospective:
-* 
 
 ----
 
 ### Friday 24th April
 
-#### Sprint Backlog:
-* 
 
-#### Sprint Review:
-* 
 
-#### Sprint Retrospective:
-* 
+
+
+
+20 addtocartfeature
+20-22 checkoutfeature
+22-23 orderconfirmation
+23 factoryfeature
+23 refactor
+24 beginning
