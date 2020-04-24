@@ -70,13 +70,3 @@
 
 
 
-
-
-
-
-20 addtocartfeature
-20-22 checkoutfeature
-22-23 orderconfirmation
-23 factoryfeature
-23 refactor
-24 beginning
