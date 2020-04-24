@@ -4,7 +4,7 @@
 
 ----
 
-### Friday 17th April
+### Friday 17th April to Friday 24th April
 
 #### Sprint Backlog:
 * Review client documentation/specification.
@@ -16,62 +16,58 @@
 * Get sitemap.
 * Make account for testing.
 * User story priority poker.
-
-#### Sprint Review:
-* Carefully read and examine the client documentation/specification. (all)
-* Trello board set up and organised as required. (TK)
-* Github repo set up and ready with README.md. (AL)
-* Client site explored and shortest path found for a purchas.e (PN)
-* Built a range of possible user stories. (all)
-* Account made to allow testing of the website. (PN)
-* User story priority assignments. (all)
-
-#### Sprint Retrospective:
-* User stories could be done better in a group to prevent duplicates.
-* Spent too much time on user stories instead of Gherkin.
-
-----
-
-### Monday 20th April
-
-#### Sprint Backlog:
 * Add Gherkin to all user stories.
 * Get sitemap.
 * Build state transition diagram for fastest purchase.
 * Helper method to populate fields with default data.
 * Focus and improve on requirement specific user stories.
 * Organise master branch on Github.
+* Code add to cart feature for framework
+* Construct README file
+* Construct Sprint Document
+* Code checkout feature for framework
+* Code order confirmation feature for framework
+* Code browser factory for driver selection
+* Code properties feature to select browser type
+* Code refactoring
+* Begin extending Page Object Model for more features
+* Merge dev branches to master
 
 #### Sprint Review:
-* User stories reprioritised towards client needs. (all)
-* Gherkin improvements to high priority user stories. (all)
-* Site map for client website. (PN)
-* Github master branch set up. (all)
+* Trello board set up and organised as required.
+* Github master branch set up.
+* Github repo set up and ready with README.md and Sprint log.
+* Client site explored and shortest path found for a purchase.
+* Built a range of possible user stories.
+* Account made to allow testing of the website.
+* User story priority assignments (Using Poker).
+* Site visually mapped
+* Gherkin features added to high priority features
+* State transition diagram made for fastest purchase route
+* Helper Method working for account login
+* Add to cart feature of framework working to specification
+* Checkout feature of framework working to specification
+* Order confirmation feature of framework working to specification
+* Browser factory working with completed framework with user friendly controls
+* Code refactored to ensure quality and object oriented principles used
+* Successful merge of all dev branches into Master branch
 
 #### Sprint Retrospective:
-* 
-
-----
-
-### Tuesday 21th April
-
-
-
-----
-
-### Wednesday 22nd April
-
-
-
-----
-
-### Thursday 23rd April
+* Carefully read and examine the client documentation/specification.
+* User stories could be done better in a group to prevent duplicates.
+* Spent too much time on user stories instead of Gherkin.
+* Quickly need to priorties User stories towards client needs.
+* Gherkin improvements to high priority user stories.
+* Working remotely has some limitations
+* Effective team work at using Git repo with few issues
+* Efficient and Agile team with effective work deligation
+* Effective time boxing approach and planning within time constraints
+* Team has a high level of autonomy and using individual strengths when needed
 
 
 
-----
 
-### Friday 24th April
+
 
 
 
